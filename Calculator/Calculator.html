@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href="style.css">
+	<head>
+		<title> Calulator </title>
+		<div class="links">
+            <p style="text-align:left;" class = "links"> <a href="/index.html" title="Go to the main page">Main Page</a></p>
+            <p style="text-align:left;" class = "links"> <a href="/rand-num/rand-num-gen.html" title="Go to the random number generator">Random number generator</a> </p>
+			<p style="text-align:left;" class = "links"> <a href="/Password-Generator/PasswordGen.html" title="Go to the Secure Password Generator">Password Generator</a> </p>
+        </div>
+		<h2> Calculator </h2>
+	</head>
+	<body>
+		<script src="calc.js"></script>
+		<h3>First Number</h3>
+		<input type="text" class="numOne"><br>
+		<h3>Sign</h3>
+		<select class="sign" name="sign">
+            <option value="+">Add</option>
+            <option value="-">Subtract</option>
+            <option value="/">Divide</option>
+            <option value="*">Multiply</option>
+            <option value="%">Modulo</option>
+			<option value="^">power of</option>
+        </select>
+        <h3>Second Number</h3>
+		<input type="text" class="numTwo"><br>
+		<button class="button" onclick="calculate()">Calculate</button>
+		<div id="result"></div>
+	</body>
+</html>
