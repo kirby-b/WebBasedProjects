@@ -1,0 +1,51 @@
+@media screen and (min-width: 600px) {
+    h1 {
+        text-align:center;
+        font-size: 30px;
+    }
+    p, a{
+        font-size: 20px;
+    }
+    div.columns{
+        margin:auto;
+        float:left;
+        height:auto;
+        width:30.3333333333333%;
+        margin-right: 3px;
+    }
+    div.columns p{
+        font-size: 100%;
+    }
+}@media screen and (max-width: 600px) {
+    h1 {
+        text-align:center;
+        font-size: 50px;
+        width: 100%;
+    }
+    h3 {
+        text-align:center;
+        font-size: 40px;
+        width: 100%;
+    }
+    p, a, li, dd{
+        font-size: 25px;
+        width:100%
+    }
+    div.columns{
+        margin:auto;
+        height:auto;
+        width:100%;
+    }
+    div.columns p{
+        font-size: 100%;
+    }
+}
+h1, h3, p {
+    text-align: center;
+}
+a:link,a:visited,a:hover,a:active {
+    color: #243c54;
+}
+body{
+    background-color: cornsilk;
+}
