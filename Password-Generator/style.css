@@ -1,0 +1,78 @@
+@media screen and (min-width: 600px) {
+    h2 {
+        text-align:center;
+        font-size: 30px;
+    }
+    p, a{
+        font-size: 20px;
+    }
+    h2,div,button,input,body p{
+        color: green;
+    }
+    html{
+        text-align: center;
+    }
+    div.links p{
+        white-space: nowrap;
+        display:inline-block;
+        size:100%;
+    }
+    #result{
+        font-size: 21px;
+    }
+    button{
+        font-size: 20px;
+        color: green;
+        margin-top: 10px;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    h2 {
+        text-align:center;
+        font-size: 45px;
+        width: 100%;
+    }
+    p{
+        font-size: 25px;
+        width:100%
+    }
+    h2,div,button,input,p{
+        color: green;
+    }
+    html{
+        text-align: center;
+    }
+    div.links p{
+        white-space: normal;
+        display: flex;
+        position: relative;
+        font-size: 20px;
+    }
+    #result{
+        font-size: 30px;
+    }
+    button{
+        font-size: 35px;
+        color: green;
+        margin-top: 10px;
+    }
+}
+.links {
+    background-color: grey;
+    padding: 5px;
+    border: 5px solid #243c54;
+    margin: 5px;
+}
+div.links{
+    top: 0;
+    position: -webkit-sticky; 
+    position: sticky;
+    display: flex;
+}
+a:link,a:visited,a:hover,a:active {
+    color: #243c54;
+}
+body{
+    background-color: black;
+}
