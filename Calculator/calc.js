@@ -1,6 +1,6 @@
 function calculate(){
-    var numOne = document.getElementsByClassName("numOne")[0].value;
-    var numTwo = document.getElementsByClassName("numTwo")[0].value;
+    let numOne = document.getElementsByClassName("numOne")[0].value;
+    let numTwo = document.getElementsByClassName("numTwo")[0].value;
     if(numOne.toUpperCase() === "PI"){
         numOne = Math.PI;
     }
