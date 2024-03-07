@@ -1,14 +1,14 @@
-var result = "";
-var passwordParts = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%&?";
+let result = "";
+let passwordParts = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%&?";
 const partsArray = passwordParts.split("");
 function passgen(){
     result = "";
     /*Make it generate a 12 character password that contains random letters, numbers, and characters
     call getparts()*/
-    var i = 0;
-    var numCount = 0;
-    var letterCount = 0;
-    var specialCount = 0;
+    let i = 0;
+    let numCount = 0;
+    let letterCount = 0;
+    let specialCount = 0;
     getparts()
     while (i < result.length){
         /*check to make sure there are no immediate repeats
@@ -42,8 +42,8 @@ function passgen(){
     }
 }
 function getparts(){
-    var i = 0;
-    var selected = "";
+    let i = 0;
+    let selected = "";
     while (i < 12){
         /*grab a character from a split string/list
         add it to a string*/
