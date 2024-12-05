@@ -1,27 +1,24 @@
-const playerText = document.querySelector("#playerText");
-const compText = document.querySelector("#compText");
-const resText = document.querySelector("#resText");
-const choiceBtns = document.querySelectorAll(".choiceBtn");
+const playerText = document.querySelector("#playerText"); // Gets playertext so it can update player choice text
+const compText = document.querySelector("#compText"); // Gets comptext so it can update the computers choice text
+const resText = document.querySelector("#resText"); // Gets restext so it can update the result
+const choiceBtns = document.querySelectorAll(".choiceBtn"); // Querys all choice buttons so it can see what you click
 let player;
 let comp;
 
 choiceBtns.forEach(button => button.addEventListener("click", () => {
-
-
     player = button.textContent;
     compTurn();
     playerText.textContent = `Player: ${player}`;
     compText.textContent = `Computer: ${comp}`;
     resText.textContent = checkWinner();
+    // When a button is pressed, it updates your choice and retreives a new computer choice. 
+    // It then checks to see who won based on your choice.
 }));
 
 
 function compTurn(){
-
-
     const randNum = Math.floor(Math.random() * 3) + 1;
-
-
+    // Gets a semi-random number to decide the computers choice
     switch(randNum){
       case 1:
         comp = "ROCK";
